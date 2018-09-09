@@ -3,7 +3,7 @@
 This is a RESTful api built with the SlimPHP framework and uses MySQL for storage.
 
 ### Version
-1.0.0
+1.0.1
 
 ### Usage
 
@@ -21,8 +21,8 @@ $ composer
 ```
 ### API Endpints
 ```sh
-$ GET /api/customers
-$ GET /api/customer/{id}
+$ GET /api/customers/{api}
+$ GET /api/customer/api/{id}
 $ POST /api/customer/add
 $ PUT /api/customer/update/{id}
 $ DELETE /api/customer/delete/{id}
