@@ -1,7 +1,7 @@
 # SlimApp RESTful API
 
 This is a RESTful api built with the SlimPHP framework and uses MySQL for storage.
-There are added API authentication class(tools.php) and real world example usage(example.php).
+There are added a simple API authentication class(tools.php) and real world example usage(example.php).
 
 ### Version
 1.0.1
