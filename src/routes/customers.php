@@ -8,6 +8,7 @@ $app->options('/{routes:.+}', function ($request, $response, $args) {
     return $response;
 });
 
+/*
 $app->add(function ($req, $res, $next) {
     $response = $next($req, $res);
     return $response
@@ -15,7 +16,7 @@ $app->add(function ($req, $res, $next) {
             ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
             ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 });
-
+*/
 // Get All Customers
 $app->get('/api/customers', function(Request $request, Response $response){
     $sql = "SELECT * FROM customers";
