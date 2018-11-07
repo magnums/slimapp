@@ -6,10 +6,10 @@
         private $dbpass = '123456';
         private $dbname = 'slimapp';
 
-        // Connect
+        // Connect with utf-8
         public function connect(){
             $mysql_connect_str = "mysql:host=$this->dbhost;dbname=$this->dbname";
-            $dbConnection = new PDO($mysql_connect_str, $this->dbuser, $this->dbpass);
+            $dbConnection = new PDO($mysql_connect_str, $this->dbuser, $this->dbpass,[PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
             $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $dbConnection;
         }
